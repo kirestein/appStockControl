@@ -319,7 +319,6 @@ class Ui_MainWindow(object):
         self.verticalLayout_12.setObjectName(u"verticalLayout_12")
         self.label_7 = QLabel(self.pg_contato)
         self.label_7.setObjectName(u"label_7")
-        self.label_7.setMaximumSize(QSize(16777215, 50))
 
         self.verticalLayout_12.addWidget(self.label_7)
 
@@ -327,6 +326,26 @@ class Ui_MainWindow(object):
         self.label_16.setObjectName(u"label_16")
 
         self.verticalLayout_12.addWidget(self.label_16)
+
+        self.horizontalLayout_2 = QHBoxLayout()
+        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
+        self.label_17 = QLabel(self.pg_contato)
+        self.label_17.setObjectName(u"label_17")
+
+        self.horizontalLayout_2.addWidget(self.label_17)
+
+
+        self.verticalLayout_12.addLayout(self.horizontalLayout_2)
+
+        self.horizontalLayout_14 = QHBoxLayout()
+        self.horizontalLayout_14.setObjectName(u"horizontalLayout_14")
+        self.label_19 = QLabel(self.pg_contato)
+        self.label_19.setObjectName(u"label_19")
+
+        self.horizontalLayout_14.addWidget(self.label_19)
+
+
+        self.verticalLayout_12.addLayout(self.horizontalLayout_14)
 
         self.stackedWidget.addWidget(self.pg_contato)
         self.pg_sobre = QWidget()
@@ -718,7 +737,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(1)
+        self.stackedWidget.setCurrentIndex(3)
         self.tabWidget.setCurrentIndex(0)
 
 
@@ -763,7 +782,9 @@ class Ui_MainWindow(object):
         self.txt_filtro.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Filtro", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), QCoreApplication.translate("MainWindow", u"Estoque", None))
         self.label_7.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:24pt; font-weight:600; color:#ffffff;\">Contato</span></p></body></html>", None))
-        self.label_16.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:24pt; color:#ffffff;\">Desenvolvedor: </span><span style=\" font-size:24pt; font-weight:600; color:#ffffff;\">Erik Proen\u00e7a</span></p><p align=\"center\"><img src=\"assets/whats.png\"/><span style=\" font-size:24pt; color:#ffffff;\">(11) 9 8616-5932</span></p><p align=\"center\"><img src=\"assets/email.png\"/><span style=\" font-size:24pt; color:#ffffff;\"/><span style=\" font-size:24pt; color:#ffffff;\">erik@erikproenca.me</span></p></body></html>", None))
+        self.label_16.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:24pt; color:#ffffff;\">Desenvolvedor: </span><span style=\" font-size:24pt; font-weight:600; color:#ffffff;\">Erik Proen\u00e7a</span></p></body></html>", None))
+        self.label_17.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:24pt; color:#ffffff;\">(11) 9 8616-5932</span></p></body></html>", None))
+        self.label_19.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:24pt; color:#ffffff;\">erik@erikproenca.me</span></p></body></html>", None))
         self.label_8.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:24pt; font-weight:600; color:#ffffff;\">Sobre</span></p></body></html>", None))
         self.label_15.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:16pt; color:#ffffff;\">Este sistema faz a importa\u00e7\u00e3o de arquivos XML e faz</span></p><p align=\"center\"><span style=\" font-size:16pt; color:#ffffff;\">o controle do estoque de acordo com a entrada de</span></p><p align=\"center\"><span style=\" font-size:16pt; color:#ffffff;\">notas e sa\u00eddas apontadas pelo usu\u00e1rio.</span></p></body></html>", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:48pt; font-weight:600; color:#064d00;\">STOCK CONTROL</span></p><p align=\"center\"><span style=\" font-size:18pt;\">Created by </span><span style=\" font-size:24pt; color:#6f0000;\">Erik Proen\u00e7a</span></p></body></html>", None))
