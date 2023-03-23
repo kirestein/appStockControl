@@ -58,11 +58,11 @@ class Ui_MainWindow(object):
 
         self.stackedWidget = QStackedWidget(self.centralwidget)
         self.stackedWidget.setObjectName(u"stackedWidget")
-        self.pg_table = QWidget()
-        self.pg_table.setObjectName(u"pg_table")
-        self.verticalLayout_8 = QVBoxLayout(self.pg_table)
+        self.pg_tables = QWidget()
+        self.pg_tables.setObjectName(u"pg_tables")
+        self.verticalLayout_8 = QVBoxLayout(self.pg_tables)
         self.verticalLayout_8.setObjectName(u"verticalLayout_8")
-        self.tabWidget = QTabWidget(self.pg_table)
+        self.tabWidget = QTabWidget(self.pg_tables)
         self.tabWidget.setObjectName(u"tabWidget")
         self.tables = QWidget()
         self.tables.setObjectName(u"tables")
@@ -158,7 +158,19 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_8.addWidget(self.tabWidget)
 
-        self.stackedWidget.addWidget(self.pg_table)
+        self.stackedWidget.addWidget(self.pg_tables)
+        self.pg_contato = QWidget()
+        self.pg_contato.setObjectName(u"pg_contato")
+        self.label_7 = QLabel(self.pg_contato)
+        self.label_7.setObjectName(u"label_7")
+        self.label_7.setGeometry(QRect(430, 30, 211, 41))
+        self.stackedWidget.addWidget(self.pg_contato)
+        self.pg_sobre = QWidget()
+        self.pg_sobre.setObjectName(u"pg_sobre")
+        self.label_8 = QLabel(self.pg_sobre)
+        self.label_8.setObjectName(u"label_8")
+        self.label_8.setGeometry(QRect(450, 40, 151, 41))
+        self.stackedWidget.addWidget(self.pg_sobre)
         self.pg_home = QWidget()
         self.pg_home.setObjectName(u"pg_home")
         self.verticalLayout = QVBoxLayout(self.pg_home)
@@ -196,6 +208,8 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_9.addWidget(self.label_6)
 
+        self.horizontalLayout_6 = QHBoxLayout()
+        self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
         self.horizontalLayout_5 = QHBoxLayout()
         self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
         self.nome = QLabel(self.pg_cadastro)
@@ -209,10 +223,8 @@ class Ui_MainWindow(object):
         self.horizontalLayout_5.addWidget(self.txt_nome)
 
 
-        self.verticalLayout_9.addLayout(self.horizontalLayout_5)
+        self.horizontalLayout_6.addLayout(self.horizontalLayout_5)
 
-        self.horizontalLayout_6 = QHBoxLayout()
-        self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
         self.usuario = QLabel(self.pg_cadastro)
         self.usuario.setObjectName(u"usuario")
 
@@ -235,23 +247,45 @@ class Ui_MainWindow(object):
 
         self.txt_senha = QLineEdit(self.pg_cadastro)
         self.txt_senha.setObjectName(u"txt_senha")
+        self.txt_senha.setEchoMode(QLineEdit.Password)
 
         self.horizontalLayout_7.addWidget(self.txt_senha)
+
+        self.btn_senha = QPushButton(self.pg_cadastro)
+        self.btn_senha.setObjectName(u"btn_senha")
+
+        self.horizontalLayout_7.addWidget(self.btn_senha)
+
+        self.n_senha = QPushButton(self.pg_cadastro)
+        self.n_senha.setObjectName(u"n_senha")
+
+        self.horizontalLayout_7.addWidget(self.n_senha)
 
 
         self.verticalLayout_9.addLayout(self.horizontalLayout_7)
 
         self.horizontalLayout_8 = QHBoxLayout()
         self.horizontalLayout_8.setObjectName(u"horizontalLayout_8")
-        self.txt_senha_2 = QLabel(self.pg_cadastro)
+        self.senha_2 = QLabel(self.pg_cadastro)
+        self.senha_2.setObjectName(u"senha_2")
+
+        self.horizontalLayout_8.addWidget(self.senha_2)
+
+        self.txt_senha_2 = QLineEdit(self.pg_cadastro)
         self.txt_senha_2.setObjectName(u"txt_senha_2")
+        self.txt_senha_2.setEchoMode(QLineEdit.Password)
 
         self.horizontalLayout_8.addWidget(self.txt_senha_2)
 
-        self.lineEdit_4 = QLineEdit(self.pg_cadastro)
-        self.lineEdit_4.setObjectName(u"lineEdit_4")
+        self.btn_senha_2 = QPushButton(self.pg_cadastro)
+        self.btn_senha_2.setObjectName(u"btn_senha_2")
 
-        self.horizontalLayout_8.addWidget(self.lineEdit_4)
+        self.horizontalLayout_8.addWidget(self.btn_senha_2)
+
+        self.n_senha_2 = QPushButton(self.pg_cadastro)
+        self.n_senha_2.setObjectName(u"n_senha_2")
+
+        self.horizontalLayout_8.addWidget(self.n_senha_2)
 
 
         self.verticalLayout_9.addLayout(self.horizontalLayout_8)
@@ -333,7 +367,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(2)
+        self.stackedWidget.setCurrentIndex(3)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -373,13 +407,19 @@ class Ui_MainWindow(object):
         self.btn_estornar.setText(QCoreApplication.translate("MainWindow", u"Estorno", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tables), QCoreApplication.translate("MainWindow", u"TreeWidget", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), QCoreApplication.translate("MainWindow", u"Tab 2", None))
+        self.label_7.setText(QCoreApplication.translate("MainWindow", u"Contato", None))
+        self.label_8.setText(QCoreApplication.translate("MainWindow", u"Sobre", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:48pt; font-weight:600; color:#064d00;\">STOCK CONTROL</span></p><p align=\"center\"><span style=\" font-size:18pt;\">Created by </span><span style=\" font-size:24pt; color:#6f0000;\">Erik Proen\u00e7a</span></p></body></html>", None))
         self.label_14.setText(QCoreApplication.translate("MainWindow", u"Tela de Cadastro", None))
         self.label_6.setText(QCoreApplication.translate("MainWindow", u"Cadastrar Usu\u00e1rio", None))
         self.nome.setText(QCoreApplication.translate("MainWindow", u"Nome", None))
         self.usuario.setText(QCoreApplication.translate("MainWindow", u"Usu\u00e1rio", None))
         self.senha.setText(QCoreApplication.translate("MainWindow", u"Senha", None))
-        self.txt_senha_2.setText(QCoreApplication.translate("MainWindow", u"Senha", None))
+        self.btn_senha.setText(QCoreApplication.translate("MainWindow", u"ver", None))
+        self.n_senha.setText(QCoreApplication.translate("MainWindow", u"\u00f1 ver", None))
+        self.senha_2.setText(QCoreApplication.translate("MainWindow", u"Senha", None))
+        self.btn_senha_2.setText(QCoreApplication.translate("MainWindow", u"ver", None))
+        self.n_senha_2.setText(QCoreApplication.translate("MainWindow", u"\u00f1 ver", None))
         self.label_11.setText(QCoreApplication.translate("MainWindow", u"Perfil", None))
         self.cb_perfil.setItemText(0, QCoreApplication.translate("MainWindow", u"Usu\u00e1rio", None))
         self.cb_perfil.setItemText(1, QCoreApplication.translate("MainWindow", u"Administrador", None))

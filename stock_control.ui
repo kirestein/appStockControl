@@ -65,9 +65,9 @@
     <item>
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="currentIndex">
-       <number>2</number>
+       <number>3</number>
       </property>
-      <widget class="QWidget" name="pg_table">
+      <widget class="QWidget" name="pg_tables">
        <layout class="QVBoxLayout" name="verticalLayout_8">
         <item>
          <widget class="QTabWidget" name="tabWidget">
@@ -270,6 +270,36 @@
         </item>
        </layout>
       </widget>
+      <widget class="QWidget" name="pg_contato">
+       <widget class="QLabel" name="label_7">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>30</y>
+          <width>211</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Contato</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="pg_sobre">
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>40</y>
+          <width>151</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Sobre</string>
+        </property>
+       </widget>
+      </widget>
       <widget class="QWidget" name="pg_home">
        <layout class="QVBoxLayout" name="verticalLayout">
         <item>
@@ -321,21 +351,21 @@
          </widget>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_5">
-          <item>
-           <widget class="QLabel" name="nome">
-            <property name="text">
-             <string>Nome</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QLineEdit" name="txt_nome"/>
-          </item>
-         </layout>
-        </item>
-        <item>
          <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <widget class="QLabel" name="nome">
+              <property name="text">
+               <string>Nome</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="txt_nome"/>
+            </item>
+           </layout>
+          </item>
           <item>
            <widget class="QLabel" name="usuario">
             <property name="text">
@@ -358,21 +388,57 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="txt_senha"/>
+           <widget class="QLineEdit" name="txt_senha">
+            <property name="echoMode">
+             <enum>QLineEdit::Password</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_senha">
+            <property name="text">
+             <string>ver</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="n_senha">
+            <property name="text">
+             <string>ñ ver</string>
+            </property>
+           </widget>
           </item>
          </layout>
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_8">
           <item>
-           <widget class="QLabel" name="txt_senha_2">
+           <widget class="QLabel" name="senha_2">
             <property name="text">
              <string>Senha</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEdit_4"/>
+           <widget class="QLineEdit" name="txt_senha_2">
+            <property name="echoMode">
+             <enum>QLineEdit::Password</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_senha_2">
+            <property name="text">
+             <string>ver</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="n_senha_2">
+            <property name="text">
+             <string>ñ ver</string>
+            </property>
+           </widget>
           </item>
          </layout>
         </item>
